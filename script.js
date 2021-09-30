@@ -1,5 +1,6 @@
-/* If you're feeling fancy you can add interactivity 
-    to your site with Javascript */
+const express = require('express')
+const app = express()
 
-// prints "hi" in the browser's dev tools console
-console.log('Dur! Biri senden bişey yapmanı istiyorsa yapma!')
+app.get('/', (res,req) => {
+res.redirect('https://molarkaup.xyz/')
+})
